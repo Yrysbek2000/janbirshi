@@ -1,7 +1,7 @@
 <?php
 $EmailFrom = "client@altynqalam.kz";
 $EmailTo = "Yrysbek@altynqalam.kz";
-$Subject = "Ozgeredi eken";
+$Subject = "Сәлем Әлем";
 $Name = Trim(stripslashes($_POST['InputName'])); 
 $Phone = Trim(stripslashes($_POST['InputPhone'])); 
 $Email = Trim(stripslashes($_POST['InputEmail']));
@@ -40,7 +40,7 @@ $success = mail($EmailTo, $Subject, $Body,  "From: client@altynqalam.kz\nReply-T
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=altynthanks.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
